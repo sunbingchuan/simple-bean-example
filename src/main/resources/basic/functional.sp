@@ -1,0 +1,112 @@
+scan
+	base-package:com.chuan.simple.bean.example.basic.bean.functional
+aspect
+
+builder
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+
+builder
+	name:entityA
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+	build-parameter
+		array
+			ele
+				array
+					ele
+						ref:entity
+					ele
+						val:fdddds
+					ele
+						ref:entity
+			ele
+				list
+					ele
+						array
+							ele
+								ref:entity
+							ele
+								ref:entity
+							ele
+								ref:entity
+					ele
+						array
+							ele
+								ref:entity
+							ele
+								val:12333
+							ele
+								ref:entity
+			ele
+				set
+					ele
+						ref:entity
+					ele
+						ref:entity
+					ele
+						ref:entity
+builder
+	name:entityB
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+	build-parameter
+		list
+			ele
+				ref:entity
+			ele
+				val:12333
+			ele
+				ref:entity
+builder
+	name:entityC
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+	build-parameter
+		set
+			ele
+				ref:entity
+			ele
+				val:12333
+			ele
+				ref:entity
+				
+builder
+	name:entityD
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+	build-parameter
+		map
+			pair
+				key
+					val:123
+				value
+					ref:entity
+			pair
+				key
+					ref:entity
+				value
+					val:123
+builder
+	name:entityE
+	class:com.chuan.simple.bean.example.basic.bean.functional.injection.Entity
+	build-parameter
+		map
+			pair
+				key
+					val:123
+				value
+					ref:entity
+			pair
+				key
+					val:236
+				value
+					ref:entity
+	build-parameter
+		ref:entity
+
+
+builder
+	name:initialDemon
+	class:com.chuan.simple.bean.example.basic.bean.functional.proxy.Demon
+	build-parameter
+		val:无助
+	build-parameter
+		val:绝望
+	build-parameter
+		val:邪恶
