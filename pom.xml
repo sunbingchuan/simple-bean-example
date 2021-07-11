@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.chuan</groupId>
 	<artifactId>simple-bean-example</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>war</packaging>
 	<build>
 		<plugins>
@@ -34,9 +34,9 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.chuan</groupId>
+			<groupId>io.github.sunbingchuan</groupId>
 			<artifactId>simple-web</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
